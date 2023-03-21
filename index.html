@@ -7,13 +7,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <h1>Weather Dashboard</h1>
     </header>
     
+    <div class="grid-container">
+        <div class="gridItem1 gridItem">
+            <h2>Search for a City:</h2>
+            <input id="cityInput" type="text">
+            <button id="searchBtn">Search</button>
+        </div>
 
+        <div class="gridItem2 gridItem">
+            <h2 id="city"class="city"></h2>
+            <div class="flex-container">
+                <div id="temp" class="flexitem"></div>
+                <div id="wind" class="flexitem"></div>
+                <div id="humidity" class="flexitem"></div>
+            </div>
+            
+        </div>
+
+        <div id="cityHistory" class="gridItem3 gridItem"></div>
+        <div id="fiveDayForecast" class="gridItem4 gridItem"></div>
+    </div>
+
+
+    
     <script src="./script.js"></script>
 </body>
 </html>
