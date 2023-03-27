@@ -8,38 +8,51 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+          background-image: url('https://t4.ftcdn.net/jpg/04/97/80/99/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg');
+        }
+        
+    </style>
+
 </head>
 <body>
+   
+    <!-- page header  -->
     <header>
-        <h1>Weather Dashboard</h1>
+        <h1>Weather Dashboard 🌤</h1>
     </header>
-    
-    <div class="grid-container">
-        <div class="gridItem1 gridItem">
-            <h2>Search for a City:</h2>
-            <input id="cityInput" type="text">
-            <button id="searchBtn">Search</button>
-        </div>
-
-        <div class="gridItem2 gridItem">
-            <h2 id="city"class="city"></h2>
-            <div class="flex-container">
-                <div id="temp" class="flexitem"></div>
-                <div id="wind" class="flexitem"></div>
-                <div id="humidity" class="flexitem"></div>
+<!-- Main content  -->
+    <main>
+        <div class="grid-container">
+            <div class="gridItem1 gridItem">
+                <h2>🏙️ Search for a City:</h2>
+                <input id="cityInput" placeholder="City" type="text">
+                <button id="searchBtn">Search</button>
             </div>
-            
+    
+            <div class="gridItem2 gridItem">
+                <h2 id="city"class="city"></h2>
+                <h2>Weather Results:</h2>
+                <div class="flex-container">
+                    <div id="temp" class="flexitem"></div>
+                    <div id="wind" class="flexitem"></div>
+                    <div id="humidity" class="flexitem"></div>
+                </div>
+                
+            </div>
+    
+            <div id="cityHistory" class="gridItem3 gridItem">
+                
+            </div>
+    
+            <div class="gridItem4 gridItem">
+                <div id="fiveDayForecast"></div>
+            </div>
         </div>
-
-        <div id="cityHistory" class="gridItem3 gridItem">
-            
-        </div>
-
-        <div class="gridItem4 gridItem">
-            <div id="fiveDayForecast"></div>
-        </div>
-    </div>
-
+    
+    </main>
+    
 
     
     <script src="./script.js"></script>
