@@ -2,17 +2,6 @@ body {
     height: 1700px;
     background-color: aliceblue;
 }
-.searchCity {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-main {
-margin: 20px 20px;
-height: 900px;
-    
-}
-
 header {
     background-color: lightskyblue;
     padding: 10px 0;
@@ -22,12 +11,13 @@ header {
     border-bottom: black solid 2px;
     
 }
-h1 {
-    font-size: 40px;
-    font-weight: 900;
-    text-shadow: grey 2px 2px 2px;
-}
+main {
+    margin: 20px 20px;
+    height: 900px; 
+    }
 
+
+/* grid Container  */
 .grid-container {
     width: 100%;
     display: grid;
@@ -38,6 +28,7 @@ h1 {
     
 }
 
+/* Grid items  */
 .gridItem{
     background-color: white;
     display: flex;
@@ -53,9 +44,73 @@ h1 {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
-    
+    font-family: 'Courier New', Courier, monospace; 
 }
+.gridItem1{
+    
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.gridItem3 {
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* City inputs, city history  */
+.city {
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: white 2px 2px 2px;
+    box-shadow: black 2px 2px 4px 4px;
+}
+
+#cityInput {
+    background-color: transparent;
+    border-radius: .3rem;
+    border: black solid 2px;
+}
+
+#cityHistory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.searchCity {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: gray;
+  
+}
+/* container that holds the city history */
+.containerHistory {
+    width: 100px;
+    height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: aliceblue;
+  
+}
+
+
+/* five day forcast  */
 .flex-container {
     
     display: flex;
@@ -73,47 +128,6 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-
-.gridItem1{
-    
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-
-}
-
-
-
-.city {
-    font-size: 35px;
-    font-weight: 600;
-    text-shadow: white 2px 2px 2px;
-    box-shadow: black 2px 2px 4px 4px;
-}
-
-#cityInput {
-    background-color: transparent;
-    border-radius: .3rem;
-    border: black solid 2px;
-}
-#searchBtn {
-    border: solid black 1px;
-    border-radius: .5rem;
-    cursor: pointer;
-    
-}
-
-#searchBtn:hover {
-    background-color: #00ADD8E6;
-    border: black 1.5px solid;
-}
-::placeholder {
-    color: gray;
-  
-}
-
 .day {
     width: 500px;
     height: 200px;
@@ -136,22 +150,38 @@ h1 {
 
 }
 
-#cityHistory {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
 
-.gridItem3 {
-    display: flex;
-    align-items: start;
-    
-}
+
+
+
+
+            /* Buttons  */
 #historyBtn {
     margin-top: 30px;
 }
+
+#searchBtn {
+    border: solid black 1px;
+    border-radius: .5rem;
+    cursor: pointer;
+    
+}
+
+#searchBtn:hover {
+    background-color: #00ADD8E6;
+    border: black 1.5px solid;
+}
+
+
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: grey 2px 2px 2px;
+}
+
+
 
 @media (max-width: 780px) {
     .grid-container {
