@@ -135,3 +135,27 @@ h1 {
     justify-content: center;
 
 }
+
+#cityHistory {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.gridItem3 {
+    display: flex;
+    align-items: start;
+    
+}
+#historyBtn {
+    margin-top: 30px;
+}
+
+@media (max-width: 780px) {
+    .grid-container {
+        min-width: 700px;
+       display: block;
+    }
+  }
