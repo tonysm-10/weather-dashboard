@@ -1,9 +1,20 @@
+body {
+    height: 1700px;
+    background-color: aliceblue;
+}
+.searchCity {
+    font-size: 25px;
+    font-weight: 600;
+}
 
 main {
-    margin: 20px 20px
+margin: 20px 20px;
+height: 900px;
+    
 }
+
 header {
-    background-color: aliceblue;
+    background-color: lightskyblue;
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -18,14 +29,13 @@ h1 {
 }
 
 .grid-container {
-   
     width: 100%;
-    height: 600px;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
     row-gap: 10px;
     column-gap: 10px;
-    grid-template-rows: 1fr 1fr;
+    
 }
 
 .gridItem{
@@ -34,7 +44,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid  black;
+    border: 2px solid  black;
 }
 
 .gridItem2 {
@@ -51,13 +61,17 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    border: 2px solid black;
 }
 .flexitem { 
     background-color: lightgray;
     padding: 20px;
-    width: 150px;
+    width: 200px;
     height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridItem1{
@@ -74,11 +88,15 @@ h1 {
 
 .city {
     font-size: 35px;
-    
+    font-weight: 600;
+    text-shadow: white 2px 2px 2px;
+    box-shadow: black 2px 2px 4px 4px;
 }
 
 #cityInput {
     background-color: transparent;
+    border-radius: .3rem;
+    border: black solid 2px;
 }
 #searchBtn {
     border: solid black 1px;
@@ -90,4 +108,30 @@ h1 {
 #searchBtn:hover {
     background-color: #00ADD8E6;
     border: black 1.5px solid;
+}
+::placeholder {
+    color: gray;
+  
+}
+
+.day {
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: .3rem;
+    border: black solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+
+}
+
+.dayFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
