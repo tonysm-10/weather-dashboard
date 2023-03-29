@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -24,13 +24,15 @@
     </header>
 <!-- Main content  -->
     <main>
+
+        <!-- search for city container -->
         <div class="grid-container">
             <div class="gridItem1 gridItem">
                 <h2 class="searchCity">🏙️ Search for a City:</h2>
                 <input id="cityInput" placeholder="City" type="text">
                 <button id="searchBtn">Search</button>
             </div>
-    
+    <!-- display todays weather container -->
             <div class="gridItem2 gridItem">
                 <h2 id="city"class="city"></h2>
                 <p id="date"></p>
@@ -50,7 +52,7 @@
                 </div>
                 
             </div>
-    
+    <!-- get city history container  -->
             <div class="gridItem3 gridItem">
                 <button id="historyBtn">History</button>
                 <div class="containerHistory">
@@ -58,9 +60,10 @@
                 </div>
                
             </div>
-    
+    <!-- five day forecast container -->
             <div class="gridItem4 gridItem">
                 <div id="fiveDayForecast">
+                    <!-- DAY ONE -->
                     <div class="dayFlex">
                         <div>
                             <h2>Day One</h2>
@@ -72,7 +75,7 @@
                                 <div id="windOne"></div>
                         </div>
                     </div>
-
+                    <!-- DAY TWO -->
                     <div class="dayFlex">
                         <div>
                             <h2>Day Two</h2>
@@ -84,7 +87,7 @@
                             <div id="windTwo"></div>
                         </div>
                     </div>
-
+                    <!-- DAY THREE -->
                     <div class="dayFlex">
                         <div>
                             <h2>Day Three</h2>
@@ -96,7 +99,7 @@
                             <div id="windThree"></div>
                         </div>
                     </div>
-                    
+                    <!-- DAY FOUR -->
                     <div class="dayFlex">
                         <div>
                             <h2>Day Four</h2>
@@ -109,7 +112,7 @@
                         </div>
                     </div>
                     
-                      
+                      <!-- DAY FIVE  -->
                     <div class="dayFlex">
                         <div>
                             <h2>Day Five</h2>
