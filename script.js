@@ -207,11 +207,6 @@ function getCurrentWeather(cityName, callback) {
     var dateThree = $('#dateThree')
     var dateFour = $('#dateFour')
     var dateFive = $('#dateFive')
-    // var dateUno = data.list[1].dt_txt
-    // var dateDos = data.list[9].dt_txt
-    // var dateTres = data.list[17].dt_txt
-    // var dateCuatro = data.list[25].dt_txt
-    // var dateCinco = data.list[33].dt_txt
 
     dateOne.text(data.list[1].dt_txt)
     dateTwo.text(data.list[9].dt_txt)
