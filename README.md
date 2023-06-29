@@ -4,7 +4,7 @@ This is a simple web application that allows users to search for the weather of 
 
 ## Deployed Application and Repository
 
-- Deployed Application: https://tonysm-10.github.io/weather-dashboard/
+- Deployed Application: http://127.0.0.1:5500/index.html
 
 - Weather Dashboard Repository: https://github.com/tonysm-10/weather-dashboard
 
